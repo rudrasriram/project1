@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Petto - Pet Information</title>
+</head>
+<body>
+    <h1>Petto - Pet Information</h1>
+    <ul>
+        {% for pet in pets %}
+            <li>
+                <h2>{{ pet.name }}</h2>
+                <p>Species: {{ pet.species }}</p>
+                <p>Age: {{ pet.age }}</p>
+                <p>Color: {{ pet.color }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
